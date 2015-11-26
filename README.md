@@ -1,0 +1,1 @@
+This is my personal website, where I will be showcasing the many projects soon to be. Also a profile section about myself, and a contact section for people who's interested in contacting me.
