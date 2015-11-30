@@ -5,7 +5,7 @@
 
 //* variables
 $accent: #6f7e9d;
-
+$text: #868686;
 
 //* Misc
 html, body {
@@ -22,7 +22,7 @@ body {
   font-family: 'Open Sans';
   text-transform: uppercase;
   font-weight: 700;
-  background: transparent;
+  background-color: transparent;
 
   .navbar-brand {
     color: white;
@@ -66,116 +66,186 @@ body {
       color: white;
   }
 }
-
-//* About me Profile
-.profile-header {
-  margin-top: 4%;
+// ===============================================================================
+#about {
   text-align: center;
-  color: $accent;
+  color: #868686;
+  padding: 50px 0;
 
-  h1 {
-    margin: 4% 0 2% 0;
-    font-family: Oxygen, 'Helvetica Neue', 'Open Sans';
-    text-transform: uppercase;
-  }
+  .profile-header {
+    margin: 20px 0 5px 0;
+    h1 {
+      font-family: Oxygen, 'Helvetica Neue', 'Open Sans';
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: $accent;
+      padding: 20px 0;
+    }
+    .spacer {
+      width: 100px;
+      height: 2px;
+      margin: auto;
+      background-color: $accent;
+    }
 
-  .title-accent {
-    margin: auto;
-    width: 120px;
-    border: 1px solid;
-    border-color: $accent;
-  }
-}
-
-// Profile picture
-.img-container {
-  margin-top: 3%;
-  .headshot {
-    margin: auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-image: image-url('headshot1.jpg')
-  }
-
-}
-
-//Profile summary
-.profile-content-container {
-  margin: 5% 0;
-  .content {
-    color: $accent;
     p {
-      color: #868686;
-      font-size: 17px;
-      line-height: 27px;
-
+      padding: 30px;
+      font-size: 20px;
     }
   }
 
-  // Aside Skills
-  .skills-container {
-    dl {
-      padding-left: 25%;
-      @media screen and (max-width: 767px) {
-        padding: 0;
-        text-align: center;
-      }
+  .profile {
+    width: 250px;
+    height: 243px;
+    border: 5px solid #333;
+    img {
+      width: 100%;
+      height: auto;
     }
-    .skills {
-      h2 {
-        color: $accent;
-      }
-    }
-    .skill-list {
-      font-size: 17px;
-    }
+
+  }
+
+  .content {
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
   }
 }
+
+
+
+
+// ================================================================================
+
+
+// .profile-header {
+//   margin-top: 4%;
+//   text-align: center;
+//   color: $accent;
+
+//   h1 {
+//     margin: 4% 0 2% 0;
+//     font-family: Oxygen, 'Helvetica Neue', 'Open Sans';
+//     text-transform: uppercase;
+//   }
+
+//   .title-accent {
+//     margin: auto;
+//     width: 120px;
+//     border: 1px solid;
+//     border-color: $accent;
+//   }
+// }
+
+// .img-container {
+//   margin-top: 3%;
+//   .headshot {
+//     margin: auto;
+//     width: 300px;
+//     height: 300px;
+//     border-radius: 50%;
+//     background-image: image-url('headshot1.jpg')
+//   }
+
+// }
+
+
+// .profile-content-container {
+//   margin: 5% 0;
+//   .content {
+//     color: $accent;
+//     p {
+//       color: #868686;
+//       font-size: 17px;
+//       line-height: 27px;
+
+//     }
+//   }
+
+//   // Aside Skills
+//   .skills-container {
+//     dl {
+//       padding-left: 25%;
+//       @media screen and (max-width: 767px) {
+//         padding: 0;
+//         text-align: center;
+//       }
+//     }
+//     .skills {
+//       h2 {
+//         color: $accent;
+//       }
+//     }
+//     .skill-list {
+//       font-size: 17px;
+//     }
+//   }
+// }
 
 //* Contact Section
 #contact {
   background-color: lightgray;
+  text-align: center;
+  padding: 50px 0;
   .contact-header {
-    font-family: Oxygen, 'Open Sans';
-    text-transform: uppercase;
-    text-align: center;
-    margin-top: 4%;
-    color: $accent;
+    margin: 20px 0 5px 0;
 
     h1 {
-      margin-bottom: 2%;
+      font-family: Oxygen, 'Helvetica Neue', 'Open Sans';
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: $accent;
+      padding: 20px 0;
     }
-    .title-accent {
+
+    .spacer {
+      width: 100px;
+      height: 2px;
       margin: auto;
-      width: 120px;
-      border: 1px solid;
-      border-color: $accent;
+      background-color: $accent;
     }
   }
 
   .contact-content {
       margin: 3% 0;
-      @media screen and (max-width: 768px) {
-        text-align: center;
-
-        .contact-info {
-          margin: 4% 0 6% 0;
-        }
-        .social-links {
-          margin-bottom: 6%;
-        }
-      }
     .social-links {
-      text-align: center;
+
       a {
-        margin: 0 4px;
+        margin: 0 6px;
       }
     }
+  }
+}
 
-    .copyright {
-      margin-top: 3%;
-      padding-right: 10px;
+//* Footer
+
+footer {
+  padding: 50px;
+  background-position: 50% 35%;
+  background-image: image-url('sea.jpg');
+  font-family: 'Open Sans';
+  text-transform: uppercase;
+  font-weight: 700;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    a {
+      display: block;
+    }
+  }
+  #links {
+    a {
+      color: white;
+      &:hover {
+        background: transparent;
+      }
+    }
+  }
+
+  .copyright {
+    span {
+      font-size: 13px;
+      color: white;
     }
   }
 }

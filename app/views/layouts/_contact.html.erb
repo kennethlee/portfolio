@@ -2,34 +2,30 @@
     <section id="contact">
       <div class="container">
         <!-- Section title Row -->
-        <header class="contact-header row">
+        <header class="contact-header">
           <h1>Say Hello</h1>
-          <div class="title-accent"></div>
+          <div class="spacer"></div>
         </header>
 
         <!-- Contact information and social links container -->
         <div class="contact-content row">
-          <div class="contact-info col-sm-3">
+          <div class="social-links col-sm-12">
+            <%= link_to image_tag("icons/twitter.png", alt: "twitter"),
+            'https://twitter.com/wagaiznogoud' %>
+            <%= link_to image_tag("icons/fb.png", alt: "facebook"),
+            'https://www.facebook.com/thomas.lo.752' %>
+            <%= link_to image_tag("icons/git.png", alt: "github"),
+            'https://github.com/wagaiznogoud' %>
+            <%= link_to image_tag("icons/linkedin.png", alt: "linkedin"),
+            'https://www.linkedin.com/in/thomas-lo-25759538' %>
+            <%= link_to image_tag("icons/insta.png", alt: "instagram"),
+            'https://www.instagram.com/wagaiz/' %>
+          </div>
+          <div class="contact-info col-sm-12">
             <h3>Thomas Lo</h3>
             <p>Los Angeles, CA</p>
             <p>(213) 393-6282</p>
             <a>wagaiznogoud@gmail.com</a>
-          </div>
-          <div class="social-links col-sm-6">
-            <%= link_to image_tag("icons/twitter.png", alt: "twitter"),
-            'http://rubyonrails.org/' %>
-            <%= link_to image_tag("icons/fb.png", alt: "facebook"),
-            'http://rubyonrails.org/' %>
-            <%= link_to image_tag("icons/git.png", alt: "github"),
-            'http://rubyonrails.org/' %>
-            <%= link_to image_tag("icons/linkedin.png", alt: "linkedin"),
-            'http://rubyonrails.org/' %>
-            <%= link_to image_tag("icons/insta.png", alt: "instagram"),
-            'http://rubyonrails.org/' %>
-          </div>
-          <div class="copyright col-sm-3">
-            <div>Copyright &copy Thomas Lo</div>
-            <div>November, 2015</div>
           </div>
         </div>
       </div>
