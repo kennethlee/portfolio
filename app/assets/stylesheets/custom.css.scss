@@ -37,7 +37,7 @@ body {
 }
 
 //* Welcome Header
-.welcome {
+#welcome {
   height: 100%;
   max-width: auto;
   background-attachment: fixed;
@@ -95,6 +95,9 @@ body {
   }
 
   .profile {
+    @media screen and (max-width: 1200px) {
+      margin: 10px auto 40px auto;
+    }
     width: 250px;
     height: 243px;
     border: 5px solid #333;
@@ -233,6 +236,7 @@ footer {
       display: block;
     }
   }
+  
   #links {
     a {
       color: white;
